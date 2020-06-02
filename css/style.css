@@ -1,0 +1,359 @@
+@charset "utf-8";
+
+*{ margin: 0; padding: 0; box-sizing: border-box}
+ol,ul{list-style: none}
+a{text-decoration: none; outline: 0; color: #111;}
+img{border: 0;}
+body{background-color: #fff;}
+button{ background: inherit; box-shadow: 0; border: 0; cursor: pointer;}
+
+header{
+    position: absolute; top: 0; 
+    height: 150px; width: 100%;
+    background-color: #fff;
+    text-align: center;
+     border-bottom: 1px solid #ddd;
+}
+
+header .logo{
+    height: 90px;
+    line-height: 90px;
+    border-bottom: 1px solid #ddd;
+}
+
+header #navi{
+    height: 50px; max-width: 1200px;
+    min-width: 1200px;
+    width: 100%;
+    position: absolute; left: 50%;
+    margin-left: -600px; margin-top: 10px;
+    z-index: 2;
+   
+}
+
+
+header #navi .main-menu{
+    width: 100%; height: 50px;
+}
+
+header #navi .main-menu ul li{
+    float: left; width: 20%;
+}
+
+header #navi .main-menu ul li a{
+    display: block; 
+    line-height: 50px;
+    font-weight: bold; font-size: 20px;
+}
+
+header #navi .main-menu ul li a:hover{
+    color: #ed006d;
+}
+
+header #navi .sub-menu{
+    width: 100%; height: 300px;
+    background-color: #ffe1ee;
+    box-shadow: 0 2px 0px 1px #cecece;
+    display: none;
+}
+
+
+header #navi .sub-menu >div> ul> li>ul{
+    float: left;
+    width: 20%; height: 300px;
+    border-right: 1px solid #dddddd;
+}
+
+
+header #navi .sub-menu >div> ul> li>ul>li a{
+    display: block;
+    line-height: 60px;
+    font-size: 18px; font-weight: bold; color: #555;
+}
+
+header #navi .sub-menu >div> ul> li>ul>li a:hover{
+    color: #ed00ad;
+}
+
+.wrap{ max-width: 1200px; min-width: 1200px }
+
+.slide{
+    width: 100%;
+    position: absolute; top: 150px; 
+}
+
+.slide .slide_wrap{
+    width: 1200px; height: 600px;
+    position: relative; top: 0; left: 50%;
+    transform: translate(-50%);
+    overflow: hidden;
+}
+
+.img_wrap {
+    width: 4800px;
+    height: 100%;
+}
+
+.img_wrap > img{
+    width: 1200px; height: 600px;
+    margin: 0 -2.5px;
+}
+
+.slide_wrap .btn_box{
+    position: fixed; bottom: 50px; left: 50%;
+    margin-left: -50px;
+    width: 500px;
+}
+
+.slide_wrap .slide_btn{
+    float: left;
+    padding-right: 40px;
+    opacity: 0.6;
+}
+
+.slide_wrap .play_stop{
+    padding: 5px 3px;
+}
+
+.play_stop svg{
+    color: red;
+    font-size: 17px; opacity: 0.5;
+    transition: all 0.4s;
+}
+
+.play_stop svg:hover{
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+
+.play_stop.on svg{
+    opacity: 1;    
+}
+
+.slide_wrap .slide_btn svg{ font-size: 30px; color: #ffff71;}
+
+.slide_wrap .slide_btn:hover{ opacity: 1}
+
+.best{
+    width: 100%; height: 600px;
+    background-color: #ffe1ee;
+    position: absolute; top: 750px;
+}
+
+.bestItems{
+    width: 1200px; height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+ h2{
+    padding: 40px 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+.bestItems h2 {
+    height: 50px;
+}
+.bestItems .item{
+    float: left;
+    width: 20%; height: 400px;
+    margin: 40px 30px;
+    background-color: #ddd;
+    position: relative;
+}
+
+.bestItems .item > img{
+    width: 100%; height: 300px;
+    
+}
+
+.bestItems .item a{
+    display: block;
+    width: 100%; he`ight: 100px;
+    text-align: center;
+    line-height: 100px; font-weight: bold; color: #fff;
+    font-size: 25px;
+    background-color: #fd7468;
+}
+
+.bestItems .item a:hover{
+    background-color: #ffa2d4;
+}
+
+.bestItems .item .info{
+    background-color: #000;
+    width: 100%; height: 305px;
+    position: absolute;
+    opacity: 0;
+    color: #fff;
+    font-size: 30px;
+    padding-top: 70px;
+    text-align: center;
+    transition: all 1.5s;
+}
+
+.bestItems .item:hover .info{
+    opacity: 0.9;
+}
+
+.model_section{
+    position: absolute; top: 1350px;
+    width: 100%; height: 1000px;
+}
+
+.model{
+    width: 1200px; height: 100%; position: absolute; left: 50%;
+    transform: translate(-50%); 
+    overflow: hidden;
+}
+
+.model img{
+    width: 100%; height: 1000px;
+    position: absolute; top: 0;
+    opacity: 0;
+}
+
+.model:first-child img{
+    opacity: 1;
+}
+
+.model .info{
+    width: 100%; height: 100%;
+    background-color: #fff;
+    position: absolute; bottom: 0; left: 1500px;
+    opacity: 0.3;
+    transform: skewX(-45deg);
+    transition: all 0.8s;
+    
+}
+
+.model .info h1{
+    transform: skewX(45deg);
+    position: absolute;
+    bottom: 30px; left: 30px;
+    font-size: 35px;
+    transition: all 0.2s;
+}
+
+.model .info>img{
+    width: 500px; height: 150px;
+    position: absolute;
+   
+}
+
+.model .info>img:nth-child(1){
+     top: 50px;
+}
+
+.model .info>img:nth-child(2){
+     top: 250px;
+    width: 600px;
+}
+
+.model .info>img:nth-child(3){
+     top: 450px;
+     width: 1000px;
+}
+
+.model .info>img:hover{
+    cursor: pointer;
+}
+
+.model:hover .info{
+    left: 500px;
+    opacity: 0.8;
+}
+
+.model:hover .info h1{
+    opacity: 0;
+}
+
+.review{
+     position: absolute; top: 2350px;
+    width: 100%; height: 400px; background-color: #ffe1ee;
+}
+
+.review_wrap{
+    width: 1200px; 
+    position: absolute; left: 50%;
+    transform: translate(-50%);
+}
+
+.review_wrap > .review_box{
+    width: 300px;
+    height: 200px;
+    float: left;
+    position: relative;
+    background-color: #d17585; 
+    border: 1px solid #ddd; box-shadow: 2px 2px 2px 2px pink;
+    margin: 0 50px;
+    cursor: pointer;
+}
+
+.review_wrap > .review_box > img{
+    width: 100%;height: 100%;
+}
+
+.play_info{
+    position: absolute; top: 80px; left: 130px;
+    width: 100%; height: 100%;
+}
+
+.play_info:hover svg{
+    opacity: 1;
+    color: #fff;
+}
+
+.play_info svg{
+    font-size: 50px;
+    opacity: 0.7;
+}
+
+footer{
+    position: absolute; top: 2750px;
+    background-color: #ddd;
+    width: 100%;height: 250px;
+}
+footer .foot{
+    width: 1200px; position: absolute;
+    left: 50%; transform: translateX(-50%);
+}
+
+footer .f_menu{
+    height: 70px;
+}
+
+footer .f_menu ul li{
+    float: left;
+    font-size: 18px;
+    height: 70px;
+    line-height: 70px;
+    margin-right: 10px;
+    text-align: center;
+}
+footer .left{
+    height: 100px;
+    margin-top: 10px;
+}
+
+footer .left p{
+    margin-bottom: 5px;
+}
+
+footer .sns_wrap{
+    position: absolute;
+    right: 30px;
+}
+
+footer .sns_wrap svg{
+    font-size: 50px;
+    margin:0 10px;
+    transition:all 0.2s;
+}
+
+footer .sns_wrap svg:hover{
+    color: #ed006d;
+}
