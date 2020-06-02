@@ -10,5 +10,8 @@
 > 2019.10~2019.10
 
 ## COLOR
-> PINK,WHITE
+> PINK, ![white](https://user-images.githubusercontent.com/58199479/83522764-16e51280-a51c-11ea-8ed2-e83abb476a8f.PNG)
+ WHITE WHITE
+
+
 
