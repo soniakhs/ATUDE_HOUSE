@@ -7,7 +7,7 @@
 ![atudeFull](https://user-images.githubusercontent.com/58199479/83519091-632d5400-a516-11ea-8ad3-50771777bb11.png)
  
 ## 만든 기간
-> 2019.10~2019.10
+> 2019.10
 
 ## COLOR
 > ![pink](https://user-images.githubusercontent.com/58199479/83523072-84913e80-a51c-11ea-99b0-3c6974e9cd9e.PNG)
